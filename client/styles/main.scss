@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
+
+$textColor: #EEF1EF;
+$primaryColor: #1C2321;
+$secondaryColor: #000000;
+$tertiaryColor: #7D869C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $textColor;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+main {
+    background: $primaryColor;
+}
+
+.new-todo {
+    background: $secondaryColor;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    input.text {
+        width: 20vw;
+        text-align: center;
+        text-overflow: ellipsis;
+
+        &::placeholder {
+            color: $textColor;
+
+        }
+    }
+
+    input.text.title {
+        font-size: 2rem;
+    }
+
+    input.text.body {
+        font-size: 1rem;
+    }
+
+    input {
+        background: $tertiaryColor;
+    }
+}
+
+.todos {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .todo {
+        box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+        display: block;
+        background: $secondaryColor;
+        padding: 1%;
+        margin: 3%;
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    background: $tertiaryColor;
+    text-align: center;
+    min-height: 10vh;
+}
+
+button,
+.button {
+    transition: all 1s;
+
+    &:hover {
+        background: invert($color: $tertiaryColor)
+    }
+}

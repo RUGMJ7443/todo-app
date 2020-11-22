@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <title>TODOS</title>
+  </head>
+  <body>
+    <main>
+      <div class="new-todo">
+        <input
+          autocomplete="off"
+          class="text title"
+          type="text"
+          name="title"
+          placeholder="Title"
+        />
+        <input
+          autocomplete="off"
+          class="text body"
+          type="text"
+          name="body"
+          placeholder="Todo"
+        />
+        <input class="button" type="button" value="Add New To-do" />
+      </div>
+      <div class="todos"></div>
+    </main>
+    <footer>
+      <p>
+        The backend (server) was created by Evan Jones and the front-end
+        (website) was created by Matthew Jones.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #EEF1EF;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+main {
+  background: #1C2321;
+}
+
+.new-todo {
+  background: #000000;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.new-todo input.text {
+  width: 20vw;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.new-todo input.text::-webkit-input-placeholder {
+  color: #EEF1EF;
+}
+
+.new-todo input.text:-ms-input-placeholder {
+  color: #EEF1EF;
+}
+
+.new-todo input.text::-ms-input-placeholder {
+  color: #EEF1EF;
+}
+
+.new-todo input.text::placeholder {
+  color: #EEF1EF;
+}
+
+.new-todo input.text.title {
+  font-size: 2rem;
+}
+
+.new-todo input.text.body {
+  font-size: 1rem;
+}
+
+.new-todo input {
+  background: #7D869C;
+}
+
+.todos {
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.todos .todo {
+  -webkit-box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+  display: block;
+  background: #000000;
+  padding: 1%;
+  margin: 3%;
+}
+
+.todos .todo h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+footer {
+  background: #7D869C;
+  text-align: center;
+  min-height: 10vh;
+}
+
+button,
+.button {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+button:hover,
+.button:hover {
+  background: #827963;
+}
+/*# sourceMappingURL=main.css.map */
